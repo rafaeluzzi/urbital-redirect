@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Urbital</title>
+  <script>
+    function openUrbital() {
+      // Try to open the Urbital app
+      window.location.href = "urbital://";
+
+      // Fallback logic
+      setTimeout(() => {
+        // Redirect to a fallback page or app store after a delay (e.g., 1500ms)
+        window.location.href = "https://yourfallbackpage.com";
+      }, 1500);
+    }
+  </script>
+</head>
+<body>
+  <h1>Open Urbital App</h1>
+  <button onclick="openUrbital()">Click to Open Urbital</button>
+</body>
+</html>
